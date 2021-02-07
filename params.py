@@ -20,7 +20,7 @@ SELECT_COLUMNS = ["volume", "open", "high", "low", "close"]
 LABEL_NAME = "close"
 TRANSFORM_PARAMS = {
     "label": LABEL_NAME,
-    "num_examples": 100,
+    "num_examples": 100000,
     "n_steps_range": [1, 100],
     "lookup_step_range": [1, 100]
 }
