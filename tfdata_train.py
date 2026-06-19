@@ -6,7 +6,7 @@ import numpy as np
 from models import get_model
 from params import *
 import os
-from sklearn.externals import joblib
+import joblib
 from tensorflow.keras.callbacks import ModelCheckpoint, TensorBoard
 
 
@@ -87,6 +87,7 @@ if __name__ == '__main__':
         LOSS,
         OPTIMIZER
     )
+    model.summary()
     model_path = os.path.join("results", MODEL_NAME) + ".h5"
 
     if os.path.exists(model_path):
